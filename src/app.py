@@ -66,42 +66,68 @@ def main():
 
             case 1:
                 print(DIVIDER)
-                _temp_stack = """ 📌 La France compte actuellement 
-    plus de 68 millions d'habitants répartis sur son 
-    territoire métropolitain et ses 
-    départements d'outre-mer. 
+                POPULATION = """ 📌 La France compte actuellement 
+plus de 68 millions d'habitants répartis 
+sur son territoire métropolitain et ses 
+départements d'outre-mer. 
 
-    📌 Cette population se caractérise par une grande diversité 
-    culturelle et une espérance de vie parmi les plus 
-    élevées au monde.
+📌 Cette population se caractérise par une grande 
+diversité culturelle et une espérance de vie 
+parmi les plus élevées au monde.
 
-    📌 Les zones urbaines, notamment autour de Paris, 
-    Lyon et Marseille, concentrent une part 
-    importante des habitants.
+📌 Les zones urbaines, notamment autour de Paris, 
+Lyon et Marseille, concentrent une part 
+importante des habitants.
 
-    📌 Malgré un vieillissement démographique progressif, 
-    le pays maintient une dynamique de croissance 
-    grâce à un solde naturel et migratoire positif. """
+📌 Malgré un vieillissement démographique 
+progressif, le pays maintient une 
+dynamique de croissance grâce à un 
+solde naturel et migratoire positif. """
 
-                POPULATION = "\n".join(l.center(57) for l in _temp_stack.splitlines())
                 print(POPULATION)
                 print(DIVIDER)
             case 2:
                 print(DIVIDER)
-                _temp_stack = """ 💬 Le français est la langue officielle 
-        de la République française, régie par l'Académie 
-        française depuis le XVIIe siècle.
+                LANGUE = """ 💬 Le français est la 
+langue officielle de la République française, 
+régie par l'Académie française depuis 
+le XVIIe siècle.
 
-        🗣️ C'est également une langue parlée sur les cinq continents par 
-        plus de 300 millions de locuteurs à travers la Francophonie.
+🗣️  C'est également une langue parlée sur 
+les cinq continents par plus de 300 millions 
+de locuteurs à travers la Francophonie.
 
-        🗯️ En France, la défense et l'enrichissement de la langue française 
-        sont encadrés par des lois spécifiques, comme la loi Toubon. """
-                LANGUE = "\n".join(l.center(57) for l in _temp_stack.splitlines())
+🗯️  En France, la défense et l'enrichissement 
+de la langue française sont encadrés par des lois 
+spécifiques, comme la loi Toubon. """
+
                 print(LANGUE)
                 print(DIVIDER)
             case 3:
-                pass
+                info = galerias_franca['Capitale']
+                titulo('capitale'.upper())
+
+                CAPITALE = """ ✨🏙️  Paris, surnommée la Ville Lumière, est la 
+capitale politique, économique et culturelle de la France.
+
+• Située au cœur de la région Île-de-France, elle est 
+traversée par le fleuve de la Seine qui sépare la 
+Rive Gauche de la Rive Droite.
+
+• La ville abrite les principales institutions 
+gouvernementales, telles que l'Élysée et l'Assemblée 
+nationale.
+
+• Avec ses millions de touristes annuels, elle demeure 
+l'une des métropoles les plus influentes et visitées 
+de la planète. """
+
+                print(CAPITALE)  
+                print(
+                f"\nLien vers l'image: \033]8;;{info}\033\u200bCliquez ici pour"
+                f' voir la photo\033]8;;\033\\'
+            )
+                print(DIVIDER)
             case 4:
                 pass
             case 5:
