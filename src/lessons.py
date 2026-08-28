@@ -3,7 +3,7 @@ DIVIDER = '=' * 60
 
 def titulo(titulo):
 
-    _temp_stack = """ ----------- 🇫🇷 {titulo} 🇫🇷 ---------- """.format(titulo)
+    _temp_stack = """ ----------- 🇫🇷 {} 🇫🇷 ---------- """.format(titulo)
     TITULO = "\n".join(l.center(57) for l in _temp_stack.splitlines())
 
     print(DIVIDER)
