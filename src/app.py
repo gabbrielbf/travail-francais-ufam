@@ -1,3 +1,9 @@
+import os
+
+def limpar_terminal():
+
+    input('\nPressione ENTER para continuar...\n')
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 def ler_opcao_numerica():
 
@@ -34,3 +40,4 @@ def menu_interativo():
         break
 
     return alternativa
+
