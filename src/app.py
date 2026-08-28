@@ -78,7 +78,19 @@ def main():
                 print(POPULATION)
                 print(DIVIDER)
             case 2:
-                pass
+                print(DIVIDER)
+                _temp_stack = """ 💬 Le français est la langue officielle 
+        de la République française, régie par l'Académie 
+        française depuis le XVIIe siècle.
+
+        🗣️ C'est également une langue parlée sur les cinq continents par 
+        plus de 300 millions de locuteurs à travers la Francophonie.
+
+        🗯️ En France, la défense et l'enrichissement de la langue française 
+        sont encadrés par des lois spécifiques, comme la loi Toubon. """
+                LANGUE = "\n".join(l.center(57) for l in _temp_stack.splitlines())
+                print(LANGUE)
+                print(DIVIDER)
             case 3:
                 pass
             case 4:
