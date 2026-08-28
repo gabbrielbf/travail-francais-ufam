@@ -3,7 +3,7 @@ DIVIDER = '=' * 60
 
 def titulo():
 
-    _temp_stack = """ ========== 🇫🇷 LA FRANCE 🇫🇷 ========== """
+    _temp_stack = """ ----------- 🇫🇷 LA FRANCE 🇫🇷 ---------- """
     TITULO = "\n".join(l.center(57) for l in _temp_stack.splitlines())
 
     print(DIVIDER)
@@ -30,4 +30,6 @@ def motivo_do_projeto():
         sys.stdout.flush()
         time.sleep(0.02)
     print()
+
+    print(DIVIDER)
     
