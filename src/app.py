@@ -47,6 +47,10 @@ def menu_interativo():
 
 def main():
 
+    limpar_terminal()
+    motivo_do_projeto()
+    limpar_terminal()
+    
     match menu_interativo():
 
         case 1:
