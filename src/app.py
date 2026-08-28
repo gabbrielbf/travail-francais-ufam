@@ -57,20 +57,20 @@ def main():
 
             case 1:
                 print(DIVIDER)
-                _temp_stack = """ La France compte actuellement 
+                _temp_stack = """ 📌 La France compte actuellement 
     plus de 68 millions d'habitants répartis sur son 
     territoire métropolitain et ses 
     départements d'outre-mer. 
 
-    Cette population se caractérise par une grande diversité 
+    📌 Cette population se caractérise par une grande diversité 
     culturelle et une espérance de vie parmi les plus 
     élevées au monde.
 
-    Les zones urbaines, notamment autour de Paris, 
+    📌 Les zones urbaines, notamment autour de Paris, 
     Lyon et Marseille, concentrent une part 
     importante des habitants.
 
-    Malgré un vieillissement démographique progressif, 
+    📌 Malgré un vieillissement démographique progressif, 
     le pays maintient une dynamique de croissance 
     grâce à un solde naturel et migratoire positif. """
 
