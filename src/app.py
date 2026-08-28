@@ -1,4 +1,5 @@
 import os
+from lessons import DIVIDER, titulo, motivo_do_projeto
 
 def limpar_terminal():
 
@@ -16,6 +17,7 @@ def ler_opcao_numerica():
 
 def menu_interativo():
 
+    titulo()
     opcoes = [
         'Population',
         'Langue',
@@ -28,6 +30,8 @@ def menu_interativo():
 
     for indice, opcao in enumerate(opcoes, start=1):
         print('{} - {}'.format(indice, opcao))
+
+    print('-' * 30)
 
     while True:
 
@@ -59,7 +63,6 @@ def main():
             pass
         case 7:
             pass
-
 
 if __name__ == '__main__':
     main()
