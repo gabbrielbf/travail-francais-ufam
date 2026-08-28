@@ -17,7 +17,7 @@ def ler_opcao_numerica():
 
 def menu_interativo():
 
-    titulo()
+    titulo('la france'.upper())
     opcoes = [
         'Population',
         'Langue',
@@ -48,8 +48,17 @@ def menu_interativo():
 
 def main():
 
+    galerias_franca = {
+    'Capitale': 'https://depositphotos.com/br/photos/capital-da-fran%C3%A7a.html',
+    'Culture': 'https://commons.wikimedia.org/wiki/Category:Culture_of_France',
+    'Gastronomie': (
+        'https://commons.wikimedia.org/wiki/Category:Cuisine_of_France'
+    ),
+    'Monuments': 'https://commons.wikimedia.org/wiki/Category:Paris',
+}
+
     limpar_terminal()
-    motivo_do_projeto()
+    # motivo_do_projeto()
     while True:
 
         limpar_terminal()
