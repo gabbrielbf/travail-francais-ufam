@@ -41,3 +41,25 @@ def menu_interativo():
 
     return alternativa
 
+def main():
+
+    match menu_interativo():
+
+        case 1:
+            pass
+        case 2:
+            pass
+        case 3:
+            pass
+        case 4:
+            pass
+        case 5:
+            pass
+        case 6:
+            pass
+        case 7:
+            pass
+
+
+if __name__ == '__main__':
+    main()
