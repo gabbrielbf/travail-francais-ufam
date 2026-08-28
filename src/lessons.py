@@ -1,9 +1,9 @@
 import sys, time
 DIVIDER = '=' * 60
 
-def titulo():
+def titulo(titulo):
 
-    _temp_stack = """ ----------- 🇫🇷 LA FRANCE 🇫🇷 ---------- """
+    _temp_stack = """ ----------- 🇫🇷 {titulo} 🇫🇷 ---------- """.format(titulo)
     TITULO = "\n".join(l.center(57) for l in _temp_stack.splitlines())
 
     print(DIVIDER)
@@ -31,7 +31,7 @@ def motivo_do_projeto():
     for char in MOTIVO: 
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(0.02)
+        time.sleep(0.01)
     print()
 
     print(DIVIDER)
