@@ -155,7 +155,30 @@ de visiteurs. """
             )
                 print(DIVIDER)
             case 5:
-                pass
+                info = galerias_franca['Gastronomie']
+                titulo('culture'.upper())
+
+                GASTRONOMIE = """ 😋 🍽️  Reconnue comme un art de vivre 
+à part entière, la gastronomie française est inscrite au 
+patrimoine culturel immatériel de l'humanité par l'UNESCO.
+
+• Elle se distingue par la qualité de ses produits du terroir, 
+l'art de la table et des traditions culinaires raffinées.
+
+• Les spécialités varient considérablement selon les régions, 
+allant des fromages affinés aux vins prestigieux en 
+passant par la boulangerie traditionnelle.
+
+• Les grands chefs français continuent d'innover tout en 
+préservant l'excellence des techniques classiques 
+de cuisine et de pâtisserie. """
+                print(GASTRONOMIE)  
+                print(
+                f"\nLien vers l'image: \033]8;;{info}\033\u200bCliquez ici pour"
+                f' voir la photo\033]8;;\033\\'
+            )
+                print(DIVIDER)
+
             case 6:
                 pass
             case 7:
