@@ -129,7 +129,7 @@ de la planète. """
             )
                 print(DIVIDER)
             case 4:
-                info = galerias_franca['Capitale']
+                info = galerias_franca['Culture']
                 titulo('culture'.upper())
 
                 CULTURE = """ 🏛️🎭  La culture française bénéficie 
