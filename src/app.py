@@ -129,7 +129,31 @@ de la planète. """
             )
                 print(DIVIDER)
             case 4:
-                pass
+                info = galerias_franca['Capitale']
+                titulo('culture'.upper())
+
+                CULTURE = """ 🏛️🎭  La culture française bénéficie 
+d'un rayonnement mondial exceptionnel à travers son histoire, 
+sa littérature et ses arts visuels.
+
+• Des figures emblématiques comme Molière, Victor Hugo, Monet 
+ou Debussy ont profondément marqué le patrimoine 
+artistique universel.
+
+• Le pays investit continuellement dans la protection de 
+son exception culturelle, soutenant le cinéma, le 
+théâtre et la musique.
+
+• Les musées français, à l'image du célèbre Musée du Louvre, 
+accueillent des chefs-d'œuvre admirés par des millions 
+de visiteurs. """
+
+                print(CULTURE)  
+                print(
+                f"\nLien vers l'image: \033]8;;{info}\033\u200bCliquez ici pour"
+                f' voir la photo\033]8;;\033\\'
+            )
+                print(DIVIDER)
             case 5:
                 pass
             case 6:
