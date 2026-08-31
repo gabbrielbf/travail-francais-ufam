@@ -161,6 +161,7 @@ international passionné d'histoire et de belles pierres. """
             )
                 print(DIVIDER)
             case 7:
+                print(DIVIDER)
                 if quitter_programme() == False:
                     continue
                 else:
