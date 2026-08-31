@@ -77,7 +77,7 @@ def main():
 
     galerias_franca = {
     'Capitale': 'https://depositphotos.com/br/photos/capital-da-fran%C3%A7a.html',
-    'Culture': 'https://commons.wikimedia.org/wiki/Category:Culture_of_France',
+    'Culture': 'https://www.youtube.com/watch?v=Nlsm0RlC8zI&pp=ygUqbWVsaG9yZXMgbW9tZW50b3MgZmluYWwgY29wYSBkbyBtdW5kbyAyMDA2',
     'Gastronomie': (
         'https://commons.wikimedia.org/wiki/Category:Cuisine_of_France'
     ),
