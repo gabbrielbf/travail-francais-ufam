@@ -1,9 +1,9 @@
-from lessons import DIVIDER, titulo, motivo_do_projeto
-from utils import limpar_terminal, menu_interativo, exit_program
+from lessons import DIVIDER, titre, motif_du_projet
+from utils import effacer_terminal, menu_interactif, quitter_programme
 
 def main():
 
-    galerias_franca = {
+    galeries_france = {
     'Capitale': 'https://depositphotos.com/br/photos/capital-da-fran%C3%A7a.html',
     'Culture': 'https://www.youtube.com/watch?v=Nlsm0RlC8zI&pp=ygUqbWVsaG9yZXMgbW9tZW50b3MgZmluYWwgY29wYSBkbyBtdW5kbyAyMDA2',
     'Gastronomie': (
@@ -12,12 +12,12 @@ def main():
     'Monuments': 'https://commons.wikimedia.org/wiki/Category:Paris',
 }
 
-    limpar_terminal()
-    # motivo_do_projeto()
+    effacer_terminal()
+    motif_du_projet()
     while True:
 
-        limpar_terminal()
-        match menu_interativo():
+        effacer_terminal()
+        match menu_interactif():
 
             case 1:
                 print(DIVIDER)
@@ -59,8 +59,8 @@ spécifiques, comme la loi Toubon. """
                 print(LANGUE)
                 print(DIVIDER)
             case 3:
-                info = galerias_franca['Capitale']
-                titulo('capitale'.upper())
+                info = galeries_france['Capitale']
+                titre('capitale'.upper())
 
                 CAPITALE = """ ✨🏙️  Paris, surnommée la Ville Lumière, est la 
 capitale politique, économique et culturelle de la France.
@@ -84,8 +84,8 @@ de la planète. """
             )
                 print(DIVIDER)
             case 4:
-                info = galerias_franca['Culture']
-                titulo('culture'.upper())
+                info = galeries_france['Culture']
+                titre('culture'.upper())
 
                 CULTURE = """ 🏛️🎭 La culture française bénéficie d'un 
 rayonnement mondial exceptionnel à travers son histoire, 
@@ -114,8 +114,8 @@ stades de football rassemblent des foules passionnées. """
             )
                 print(DIVIDER)
             case 5:
-                info = galerias_franca['Gastronomie']
-                titulo('culture'.upper())
+                info = galeries_france['Gastronomie']
+                titre('culture'.upper())
 
                 GASTRONOMIE = """ 😋 🍽️  Reconnue comme un art de vivre 
 à part entière, la gastronomie française est inscrite au 
@@ -138,8 +138,8 @@ de cuisine et de pâtisserie. """
             )
                 print(DIVIDER)
             case 6:
-                info = galerias_franca['Monuments']
-                titulo('Monuments'.upper())
+                info = galeries_france['Monuments']
+                titre('Monuments'.upper())
 
                 MONUMENTS = """ 🏢 🏗 Le patrimoine monumental français témoigne 
 de millénaires d'histoire, allant de l'époque gallo-romaine 
@@ -161,7 +161,7 @@ international passionné d'histoire et de belles pierres. """
             )
                 print(DIVIDER)
             case 7:
-                if exit_program() == False:
+                if quitter_programme() == False:
                     continue
                 else:
                     break

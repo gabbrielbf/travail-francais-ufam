@@ -1,24 +1,24 @@
 import os
-from lessons import titulo
+from lessons import titre
 
-def limpar_terminal():
+def effacer_terminal():
 
-    input('\nPressione ENTER para continuar...\n')
+    input('\nAppuyez sur ENTRÉE pour continuer...\n')
     os.system('cls' if os.name == 'nt' else 'clear')
 
-def ler_opcao_numerica():
+def lire_option_numerique():
 
     while True:
         try:
-            return int(input('Escolha uma das opções: '))
+            return int(input('Choisissez une des options : '))
         except ValueError:
-            print('\n[ERRO]: Valor digitado inválido\n')
+            print('\n[ERREUR] : Valeur saisie invalide\n')
             continue
 
-def menu_interativo():
+def menu_interactif():
 
-    titulo('la france'.upper())
-    opcoes = [
+    titre('la france'.upper())
+    options = [
         'Population',
         'Langue',
         'Capitale',
@@ -28,47 +28,47 @@ def menu_interativo():
         'Quitter'
     ]
 
-    for indice, opcao in enumerate(opcoes, start=1):
-        print('{} - {}'.format(indice, opcao))
+    for indice, option in enumerate(options, start=1):
+        print('{} - {}'.format(indice, option))
 
     print('-' * 30)
 
     while True:
 
-        alternativa = ler_opcao_numerica()
+        alternative = lire_option_numerique()
 
-        if (alternativa < 1 
-        or alternativa > 7):
-            print('\n[ERRO]: Escolha uma alternativa dentre as exibidas.\n')
+        if (alternative < 1
+            or alternative > 7):
+            print('\n[ERREUR] : Choisissez une alternative parmi celles affichées.\n')
             continue
         break
 
-    print(f'Alternativa [{alternativa}] selecionada.')
-    return alternativa
+    print(f'Alternative [{alternative}] sélectionnée.')
+    return alternative
 
-def exit_program():
-    """ function that exits (or not) the program
-    according to a user interaction """
+def quitter_programme():
+    """ fonction qui quitte (ou non) le programme
+selon une interaction de l'utilisateur """
 
     while True:
         try:
 
-            certainty = str(input('Are you sure you want to exit?[Y/N]: ')).lower().strip()
+            certitude = str(input('Êtes-vous sûr de vouloir quitter ?[O/N] : ')).lower().strip()
 
-            if certainty != 'y' and certainty != 'n': # <- Checks if the user typed something other than Y or N
-                print('\n[ERROR] Only [Y/N]!')
+            if certitude != 'o' and certitude != 'n': # <- Vérifie si l'utilisateur a tapé autre chose que O ou N
+                print('\n[ERREUR] Seulement [O/N] !')
                 continue
 
         except ValueError:
-            print('\n[ERROR] Invalid value.\n')
+            print('\n[ERREUR] Valeur invalide.\n')
             continue
         break
 
-    if certainty == 'y':
-        print('\nProgram ended.\n') # <- EXITS
+    if certitude == 'o':
+        print('\nProgramme terminé.\n') # <- QUITTE
         return True
 
-    elif certainty == 'n':
-        print('\nThen let\'s go back!\n') # <- GOES BACK TO THE MENU
+    elif certitude == 'n':
+        print('\nAlors, retournons en arrière !\n') # <- RETOURNE AU MENU
 
     return False
