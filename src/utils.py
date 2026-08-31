@@ -69,6 +69,6 @@ selon une interaction de l'utilisateur """
         return True
 
     elif certitude == 'n':
-        print('\nAlors, retournons en arrière !\n') # <- RETOURNE AU MENU
+        print('\nAlors, retournons en arrière !') # <- RETOURNE AU MENU
 
     return False
