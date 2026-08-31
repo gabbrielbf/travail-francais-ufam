@@ -46,6 +46,33 @@ def menu_interativo():
     print(f'Alternativa [{alternativa}] selecionada.')
     return alternativa
 
+def exit_program():
+    """ function that exits (or not) the program
+    according to a user interaction """
+
+    while True:
+        try:
+
+            certainty = str(input('Are you sure you want to exit?[Y/N]: ')).lower().strip()
+
+            if certainty != 'y' and certainty != 'n': # <- Checks if the user typed something other than Y or N
+                print('\n[ERROR] Only [Y/N]!')
+                continue
+
+        except ValueError:
+            print('\n[ERROR] Invalid value.\n')
+            continue
+        break
+
+    if certainty == 'y':
+        print('\nProgram ended.\n') # <- EXITS
+        return True
+
+    elif certainty == 'n':
+        print('\nThen let\'s go back!\n') # <- GOES BACK TO THE MENU
+
+    return False
+
 def main():
 
     galerias_franca = {
@@ -199,7 +226,10 @@ international passionné d'histoire et de belles pierres. """
             )
                 print(DIVIDER)
             case 7:
-                pass
+                if exit_program() == False:
+                    continue
+                else:
+                    break
 
 if __name__ == '__main__':
     main()
