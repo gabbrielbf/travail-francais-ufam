@@ -178,9 +178,26 @@ de cuisine et de pâtisserie. """
                 f' voir la photo\033]8;;\033\\'
             )
                 print(DIVIDER)
-
             case 6:
-                pass
+                MONUMENTS = """ 🏢 🏗 Le patrimoine monumental français témoigne 
+de millénaires d'histoire, allant de l'époque gallo-romaine 
+jusqu'à l'architecture contemporaine.
+
+• La Tour Eiffel, le Château de Versailles et l'Arc de Triomphe 
+figurent parmi les symboles les plus célèbres de la nation.
+
+• Les cathédrales gothiques, telles que Notre-Dame de Paris
+ ou celle de Chartres, illustrent le génie 
+ architectural du Moyen Âge.
+
+• Ces sites historiques majeurs attirent chaque année un public 
+international passionné d'histoire et de belles pierres. """
+                print(MONUMENTS)
+                print(
+                f"\nLien vers l'image: \033]8;;{info}\033\u200bCliquez ici pour"
+                f' voir la photo\033]8;;\033\\'
+            )
+                print(DIVIDER)
             case 7:
                 pass
 
