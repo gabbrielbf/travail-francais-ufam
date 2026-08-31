@@ -206,6 +206,9 @@ de cuisine et de pâtisserie. """
             )
                 print(DIVIDER)
             case 6:
+                info = galerias_franca['Monuments']
+                titulo('Monuments'.upper())
+                
                 MONUMENTS = """ 🏢 🏗 Le patrimoine monumental français témoigne 
 de millénaires d'histoire, allant de l'époque gallo-romaine 
 jusqu'à l'architecture contemporaine.
