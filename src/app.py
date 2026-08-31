@@ -159,21 +159,25 @@ de la planète. """
                 info = galerias_franca['Culture']
                 titulo('culture'.upper())
 
-                CULTURE = """ 🏛️🎭  La culture française bénéficie 
-d'un rayonnement mondial exceptionnel à travers son histoire, 
-sa littérature et ses arts visuels.
+                CULTURE = """ 🏛️🎭 La culture française bénéficie d'un 
+rayonnement mondial exceptionnel à travers son histoire, 
+sa littérature, ses arts visuels et ses passions 
+populaires comme le sport.
 
-• Des figures emblématiques comme Molière, Victor Hugo, Monet 
-ou Debussy ont profondément marqué le patrimoine 
-artistique universel.
+• Des figures emblématiques comme Molière, Victor Hugo, 
+Monet ou Debussy ont profondément marqué le patrimoine 
+artistique universel, tout comme les légendes 
+du football français sur les terrains internationaux.
 
-• Le pays investit continuellement dans la protection de 
-son exception culturelle, soutenant le cinéma, le 
-théâtre et la musique.
+• Le pays investit continuellement dans la protection 
+de son exception culturelle, soutenant le cinéma, 
+le théâtre, la musique et les grands 
+événements sportifs.
 
-• Les musées français, à l'image du célèbre Musée du Louvre, 
-accueillent des chefs-d'œuvre admirés par des millions 
-de visiteurs. """
+• Les musées français, à l'image du célèbre Musée 
+du Louvre, accueillent des chefs-d'œuvre admirés 
+par des millions de visiteurs, tandis que les 
+stades de football rassemblent des foules passionnées. """
 
                 print(CULTURE)  
                 print(
@@ -208,7 +212,7 @@ de cuisine et de pâtisserie. """
             case 6:
                 info = galerias_franca['Monuments']
                 titulo('Monuments'.upper())
-                
+
                 MONUMENTS = """ 🏢 🏗 Le patrimoine monumental français témoigne 
 de millénaires d'histoire, allant de l'époque gallo-romaine 
 jusqu'à l'architecture contemporaine.
